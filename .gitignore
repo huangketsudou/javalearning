@@ -1,3 +1,5 @@
 /*
 !.gitignore
 !/chapter*/
+!README.md
+!net.jar
