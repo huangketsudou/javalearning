@@ -3,11 +3,11 @@ package chapter4;
 
 // Math.random() 会产生 0.0 和 1.0 吗？
 // {java RandomBounds lower}
-import onjava.*;
+
 
 public class RandomBounds {
     public static void main(String[] args) {
-        new TimedAbort(3);
+
         switch(args.length == 0 ? "" : args[0]) {
             case "lower":
                 while(Math.random() != 0.0)
