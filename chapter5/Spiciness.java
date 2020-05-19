@@ -1,0 +1,7 @@
+package chapter5;
+
+// housekeeping/Spiciness.java
+
+public enum Spiciness {
+    NOT, MILD, MEDIUM, HOT, FLAMING
+}
