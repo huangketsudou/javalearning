@@ -22,8 +22,19 @@ class Bird2{
 this指针只能够在非静态方法内部使用，当调用一个对象的方法时，this生成了一个对象引用，
 利用this指针可返回当前对象的引用，也可用于向其他方法传递当前对象，利用this还可以在构造器中调用构造器，
 注意构造的对象仍是当前的对象，并且构造器中调用构造器，只能够调用一次，且构造器必须首先调用
-
-
+注：在构造函数中对参数进行初始化时，注意一定要带上this，见下面的代码
+```java
+class A{
+    private int age;
+    public String name;
+    A(String name,int age){
+        name = name;//正确的初始化 this.name=name
+        age = age;//正确的初始化 this.age=age
+}
+}
+```
+这里的代码看似对name和age进行了初始化，但实际输出`a = new A();a.name;a.age;`时发现name为null,age为0.原因在于{}创建了一个局部作用域，导致这个作用域
+里面的name和age把作用域外的age和name给屏蔽了，没有正常初始化
 ### java static关键字
 1. static关键字的用途
 2. static关键字的误区
@@ -104,7 +115,7 @@ class Person{
         endDate=(Date).valueOf('1964');
 }
     public Person(Date birthDate){
-        this.birthDate = birthDate
+        this.birthDate = birthDate;
 }
     boolean isBornBoomer(){
         return birthDate.compareTo(startDate)>=0  && birthDate.compareTo(endDate)<0;
