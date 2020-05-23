@@ -21,11 +21,39 @@ Java中除了静态和final方法以外，所有的方法都是后期绑定，fi
 
 #### 属性与静态方法
 1. 当子类与父类具有同名的属性时，实际上一个派生类的对象中包含了两组该属性，一个自己的属性，一个来自父类的属性，但是直接访问该属性只会返回派生类的属性，要想访问
-父类的同名属性，只能通过super方法调用，具体见[FieldAccess.java](FieldAccess.java)文件,如果此时将一个父类的对象向上转型为一个子类存储，那么再访问它
+父类的同名属性，只能通过super方法调用，具体见[FieldAccess.java](FieldAccess.java)文件,如果此时将一个子类的对象向上转型为一个父类存储，那么再访问它
 的属性，就会返回子类的属性。一般会把父类的属性设置为private
 2. 如果一个方法是静态的，那么它的行为就不具有多态性-见文件[StaticPolymorphism.java](StaticPolymorphism.java),简而言之，一个对象被向上转型为一个什么类，
 在调用静态方法时就会调用哪个类的静态方法，而不是对象的静态方法。静态的方法只与类关联，与单个的对象无关。
 
+重点：
+1. 属性是不具有多态性的，方法有多态性，具体表现为当对象被向上转型时，可会正确选择子类的方法表达
+2. 静态方法与多态性无关,但是子类还是可以访问到父类的静态方法，可以参见下面的代码
+```java
+package chapter8;
+
+
+class Parent {
+    public static void  staticMethod(){
+        System.out.println("Parent staticMethod run");
+
+    }
+
+}
+class Son extends Parent {
+
+}
+public class test {
+    public static void main(String[] args) {
+        Parent child=new Son();
+        child.staticMethod();//输出：Parent staticMethod run
+        Son s=new Son();
+        s.staticMethod();//输出：Parent staticMethod run
+
+    }
+}
+```
+Son类并没有定义静态方法，但是son可以访问到parent的静态方法
 
 #### 构造器与多态
 对象的构造器调用顺序如下：
