@@ -42,7 +42,7 @@
 如果一个方法是 private 的，它就不是基类接口的一部分。它只是隐藏在类内部的代码
 #### 向上转型
 继承最重要的方面不是为新类提供方法。它是新类与基类的一种关系。简而言之，这种关系可以表述为“新类是已有类的一种类型”。
-也就是说B类继承了A类，那么B类其实也可以看作A类，可以看Wind.java文件，文件中Instrument类具有一个静态方法tune，该方法接受一个
+也就是说B类继承了A类，那么B类其实也可以看作A类，可以看[Wind.java](Wind.java)文件，文件中Instrument类具有一个静态方法tune，该方法接受一个
 Instrument对象作为参数，并调用对象的play方法，而Wind继承自Instrument，通过调用Instrument类的静态方法并传入一个Wind对象，方法
 并没有报错，原因就是Wind对象同时也是一个Instrument对象，Instrument有的他都有.也可以调用Wind.tune()方法
 。我们把将Wind转换为Instrument的行为称为向上转型。向上转型永远是安全的。
