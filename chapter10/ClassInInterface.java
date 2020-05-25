@@ -1,0 +1,15 @@
+package chapter10;
+// innerclasses/ClassInInterface.java
+// {java ClassInInterface$Test}
+public interface ClassInInterface {
+    void howdy();
+    class Test implements ClassInInterface {
+        @Override
+        public void howdy() {
+            System.out.println("Howdy!");
+        }
+        public static void main(String[] args) {
+            new Test().howdy();
+        }
+    }
+}
