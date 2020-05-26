@@ -16,6 +16,7 @@ class Brass extends Instrument {
     public void play(Note n) {
         System.out.println("Brass.play() " + n);
     }
+    public void f(){}
 }
 
 public class Music2 {
@@ -35,6 +36,9 @@ public class Music2 {
         Wind flute = new Wind();
         Stringed violin = new Stringed();
         Brass frenchHorn = new Brass();
+        Instrument kk = new Brass();
+        kk.play(Note.MIDDLE_C);
+        //kk.f();没有这种方法
         tune(flute); // No upcasting
         tune(violin);
         tune(frenchHorn);
