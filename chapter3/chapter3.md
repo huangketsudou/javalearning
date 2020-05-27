@@ -8,7 +8,7 @@
 |基本类型 |大小 |最大值 |  最小值  |  包装器类型  |
 | :------: | :------: | :------: |:------:  | :------:  |
 | boolean | - | - |  - |  Boolean |
-| char | 16-bits | Unicode 0 |  Unicode 2^16-1 |  Byte |
+| char | 16-bits | Unicode 0 |  Unicode 2^16-1 |  Character |
 | byte | 8-bits | -128 |  127 |  Byte |
 | short | 16-bits | -2**15 |  +2*15-1 | Short  |
 | int | 32-bits | -2^31 | 2^31-1  | Integer  |
