@@ -1,0 +1,7 @@
+package chapter12;
+// functional/TriFunction.java
+
+@FunctionalInterface
+public interface TriFunction<T, U, V, R> {
+    R apply(T t, U u, V v);
+}
