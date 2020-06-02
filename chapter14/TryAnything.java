@@ -4,10 +4,10 @@ package chapter14;
 class Anything {}
 public class TryAnything {
     public static void main(String[] args) {
-        try(
-                //需要一个AutoClosable对象
-                Anything a = new Anything()
-        ) {
-        }
+//        try(
+//                //需要一个AutoClosable对象
+//                //Anything a = new Anything()
+//        ) {
+//        }
     }
 }
