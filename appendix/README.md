@@ -8,7 +8,6 @@
 System.out 已经预先包装^1成了 PrintStream 对象。标准错误流 System.err 也预先包装为 PrintStream 对象，
 但是标准输入流 System.in 是原生的没有经过包装的 InputStream。这意味着尽管可以直接使用标准输出流 System.in 和标准错误流 System.err，但是在读取 System.in 之前必须先对其进行包装。
 
-
 #### 将System.out转换为PrintWriter
  System.out 是一个 PrintStream，而 PrintStream 是一个OutputStream。 PrintWriter 有一个把 OutputStream 作为参数的构造器。
  
