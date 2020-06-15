@@ -1,8 +1,4 @@
-package headfirst.command.undo;
-
-/**
- * Created by Gavin on 2017/3/14.
- */
+package DesignPattern.command.undo;
 public class LightOnCommand implements Command {
     Light light;
     int level;

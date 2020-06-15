@@ -1,4 +1,4 @@
-package headfirst.command.party;
+package DesignPattern.command.party;
 
 public class StereoOffCommand implements Command {
 	Stereo stereo;

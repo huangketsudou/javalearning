@@ -1,4 +1,4 @@
-package headfirst.command.remoteWL;
+package DesignPattern.command.remoteWL;
 
 public interface Command {
 	public void execute();

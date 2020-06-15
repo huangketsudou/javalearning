@@ -1,8 +1,5 @@
-package headfirst.command.undo;
+package DesignPattern.command.undo;
 
-/**
- * Created by Gavin on 2017/3/14.
- */
 public class CeilingFan {
     public static final int HIGH = 3;
     public static final int MEDIUM = 2;

@@ -1,8 +1,4 @@
-package headfirst.command.undo;
-
-/**
- * Created by Gavin on 2017/3/14.
- */
+package DesignPattern.command.undo;
 public class CeilingFanHighCommand implements Command {
     CeilingFan ceilingFan;
     int prevSpeed;

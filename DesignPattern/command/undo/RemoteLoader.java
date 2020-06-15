@@ -1,8 +1,4 @@
-package headfirst.command.undo;
-
-/**
- * Created by Gavin on 2017/3/14.
- */
+package DesignPattern.command.undo;
 public class RemoteLoader {
     public static void main(String[] args) {
         RemoteControlWithUndo remoteControl = new RemoteControlWithUndo();

@@ -1,8 +1,6 @@
-package headfirst.command.party;
+package DesignPattern.command.party;
 
-/**
- * Created by Gavin on 2017/3/14.
- */
+
 public class Light {
     String location;
     int level;

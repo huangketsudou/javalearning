@@ -1,8 +1,4 @@
-package headfirst.command.simpleremoteWL;
-
-/**
- * Created by Gavin on 2017/3/14.
- */
+package DesignPattern.command.simpleremoteWL;
 public class RemoteControlTest {
     public static void main(String[] args) {
         SimpleRemoteControl remote = new SimpleRemoteControl();

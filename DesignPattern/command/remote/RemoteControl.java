@@ -1,8 +1,6 @@
-package headfirst.command.remote;
+package DesignPattern.command.remote;
 
-/**
- * Created by Gavin on 2017/3/14.
- */
+
 public class RemoteControl {
     Command[] onCommands;
     Command[] offCommands;
