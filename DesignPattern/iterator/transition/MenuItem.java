@@ -1,4 +1,4 @@
-package headfirst.iterator.transition;
+package DesignPattern.iterator.transition;
 
 public class MenuItem {
 	String name;

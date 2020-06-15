@@ -1,4 +1,4 @@
-package headfirst.iterator.dinermergeri;
+package DesignPattern.iterator.dinermergeri;
 
 import java.util.Iterator;
  

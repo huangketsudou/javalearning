@@ -1,4 +1,4 @@
-package headfirst.iterator.dinermergeri;
+package DesignPattern.iterator.dinermergeri;
 
 public class MenuTestDrive {
 	public static void main(String args[]) {
